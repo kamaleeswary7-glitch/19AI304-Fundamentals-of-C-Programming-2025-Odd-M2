@@ -55,8 +55,21 @@
   Else, print Grade F.
 ### Step 11:
   Stop
-# Program:
-# Output:
+# Program:#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    float total = a+b+c+d;
+    float percentage = ((float)total/400)*100;
+    float average =(float) total/4;
+    printf("Total marks = %.2f\n",total);
+    printf("Average marks = %.2f\n",percentage);
+    printf("Percentage = %.2f\n",average);
+    return 0;
+}
+# Output:![WhatsApp Image 2025-12-26 at 6 50 12 PM](https://github.com/user-attachments/assets/52c724bd-3745-44ab-b07b-8578f58b90c5)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -87,8 +100,21 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6: 
   Stop
 
-# Program:
-# Output:
+# Program:#include <stdio.h>
+
+int main() {
+    int num = 15;
+
+    printf("Multiplication Table of %d:\n", num);
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+
+    return 0;
+}
+# Output:![WhatsApp Image 2025-12-26 at 6 51 54 PM](https://github.com/user-attachments/assets/28b1aa34-c557-4fee-b5cd-36e43e34de5e)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -130,8 +156,34 @@ Thus, the program was implemented and executed successfully, and the required ou
   Else, print that the number is not prime.
 ### Step 7:   
   Stop
-# Program:
-# Output:
+# Program:#include <stdio.h>
+
+int main() {
+    int num, i, flag = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num <= 1) {
+        flag = 1;
+    } else {
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                flag = 1;
+                break;
+            }
+        }
+    }
+
+    if (flag == 0)
+        printf("%d is a Prime number.\n", num);
+    else
+        printf("%d is not a Prime number.\n", num);
+
+    return 0;
+}
+# Output:![WhatsApp Image 2025-12-26 at 6 54 30 PM](https://github.com/user-attachments/assets/455119dc-7051-496a-8f5a-bd717c3b3b61)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -178,8 +230,25 @@ Thus, the program was implemented and executed successfully, and the required ou
   Increase i and repeat Step 6.
 ### Step 8:   
   Stop
-# Program:
-# Output:
+# Program:#include <stdio.h>
+
+int main() {
+    int n, i, j;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+# Output:![WhatsApp Image 2025-12-26 at 6 59 05 PM](https://github.com/user-attachments/assets/97c87a4b-1b34-466d-b8c3-5c698dbe8019)
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -232,6 +301,27 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+# program:#include<stdio.h>
+int main()
+{
+    int i,j;
+    int n=8;
+    for(i=n;i>=1;i--)
+    {
+        for(j=i;j<n && i<n;j++)
+        {
+            printf("%d ",j);
+        }
+        printf("0 ");
+        for(j=n-1;j>=1 && i<n && j>=i;j--)
+        {
+            printf("%d ",j);
+        }
+        printf("\n");
+    } return 0;
+}
+# output:![WhatsApp Image 2025-12-26 at 6 56 49 PM](https://github.com/user-attachments/assets/0aa42cdd-9d8d-4b35-906e-921a4ffa0436)
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
